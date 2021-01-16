@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davide Vecchio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous"/>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+
+    <header class="header">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+<!-- Poster -->
+
+    <div class="poster mt-3">
+        <div class="poster__img reveal">
+            <img src="rizzo2.png" alt="">
+        </div>
+        <div class="poster__content reveal">
+            <h3 class="big-text">Esperienze lavorative</h3>
+            <p>Ho lavorato come impiantista presso la M&V Impianti dove svolgevo installazione di nuovi impianti elettrici, controllo e riparazione centraline, interventi presso abitazioni private, assistenza al supervisore della sicurezza nella definizione della misura di prevenzione dei rischi, manutenzione di apparecchiature elettriche, preparazione delle attività di impianti.</p>
+            <p>Montatore di macchine utensili, assistenza installazione, messa in servizio e collaudo finale di centri di lavoro CNC.</p>
+        </div>
+    </div>
+
+    <div class="poster mt-3">
+        <div class="poster__content reveal">
+            <h3 class="big-text">Soft Skills</h3>
+            <p>Relazionarsi con le figure di primaria importanza all'interno dell'azienda, spirito di gruppo e capacità nella gestione dei lavori di gruppo, ottime competenze comunicative e relazionali e di adattamento. <br>Lavorare per obiettivi, organizzazione e gestione del tempo, capacità di organizzare il lavoro.</p>
+        </div>
+        <div class="poster__img reveal">
+            <img src="rizzo4.png" alt="">
+        </div>
+    </div>
+
+<!-- BG Cover -->
+
+<div class="poster mt-3">
+    <div class="poster__img reveal">
+        <img src="rizzo3.png" alt="">
+    </div>
+    <div class="poster__content reveal">
+        <h3 class="big-text">Hobby e Passioni</h3>
+        <p>La mia grande passione è lo sport, ho giocato per 15 anni a calcio, ma amo seguire anche il basket e il tennis ai quali riesco sempre a ritagliare dello spazio durante la giornata. Sono letteralmente la mia valvola di sfogo e non credo di riuscire a farne a meno.</p>
+    </div>
+</div>
+
+<!-- Carousel -->
+
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content1 zoom">
+            
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content2 zoom">
+            
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content3 zoom">
+            
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content4 zoom">
+            
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content5">
+            
+        </div>
+    </div>                                    
+</div>
+
+<!-- Footer -->
+
+<footer class="footer mt-3">
+    <div class="footer-item reveal">
+        <p class="tw">Davide Vecchio<br> Via Don Patelli, 25035, Ospitaletto (BS), Italia <br> 3460059861</p>
+    </div>
+    <div class="reveal">
+        <a href="https://www.facebook.com/andrea.natalini.31/" target="_blank">
+            <img class="social" src="facebook.png">
+        </a>
+        <a href="https://www.instagram.com/nataliniandrea/" target="_blank">
+            <img class="social" src="instagram.png">
+        </a>
+        <a href="https://www.linkedin.com/in/andrea-natalini-811534182/" target="_blank">
+            <img class="social" src="linkedin.png">
+        </a>
+    </div>
+    <div class="reveal">
+        <p class="tw">Copyright &copy; All rights reserved.</p>
+    </div>
+</footer>
+
+
+<!-- Jquery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
+
+    <script>
+        $( document ).ready(function() {
+
+            /* Open Panel */
+            $(".hamburger").on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            });
+
+        });
+
+
+        ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+
+        ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, scale: 0.65, mobile: false });
+    </script>
+
+</body>
+</html>

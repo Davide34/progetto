@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davide Vecchio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous"/>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+
+    <header class="header">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+<!-- Poster -->
+
+    <div class="poster mt-3">
+        <div class="poster__img reveal">
+            <img src="rizzo1.png" alt="">
+        </div>
+        <div class="poster__content reveal">
+            <h3 class="big-text">Contattami!</h3>
+            <p>Ciao, spero di averti fatto una bella impressione, se hai voglia, puoi contattarmi qui:</p>
+            <a href="mailto:vecchio.davide17@gmail.com" class="button">Contattami</a>
+        </div>
+    </div>
+
+<!-- Footer -->
+
+<footer class="footer mt-3">
+    <div class="footer-item reveal">
+        <p class="tw">Davide Vecchio<br> Via Don Patelli, 25035, Ospitaletto (BS), Italia <br> 3460059861</p>
+    </div>
+    <div class="reveal">
+        <a href="https://www.facebook.com/davide.vecchio.75" target="_blank">
+            <img class="social" src="facebook.png">
+        </a>
+        <a href="https://www.instagram.com/daveswst/" target="_blank">
+            <img class="social" src="instagram.png">
+        </a>
+        <a href="https://www.linkedin.com/in/davide-vecchio-00554218b/" target="_blank">
+            <img class="social" src="linkedin.png">
+        </a>
+    </div>
+    <div class="reveal">
+        <p class="tw">Copyright &copy; All rights reserved.</p>
+    </div>
+</footer>
+
+
+<!-- Jquery -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
+
+    <script>
+        $( document ).ready(function() {
+
+            /* Open Panel */
+            $(".hamburger").on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            });
+
+        });
+
+
+        ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+
+        ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, scale: 0.65, mobile: false });
+    </script>
+
+</body>
+</html>
